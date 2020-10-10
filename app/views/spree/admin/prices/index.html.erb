@@ -11,7 +11,7 @@
 <%= form_tag nil, { class: 'form-horizontal' } do %>
 
   <div id="variant-prices">
-    <%#= render 'variant_prices', variant: @product.master, panel_class: 'panel-primary' %>
+    <%= render 'variant_prices', variant: @product.master, panel_class: 'panel-primary' %>
     <% @product.variants.each_with_index do |variant, index| %>
 
       <%= render 'variant_prices', variant: variant, var_index: index %>
